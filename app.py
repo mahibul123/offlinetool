@@ -16,7 +16,7 @@ import uuid
 # =========================================================
 
 app = FastAPI()
-app.mount("/website/static", StaticFiles(directory="website/static"), name="static")
+app.mount("/static", StaticFiles(directory="."), name="static")
 UPLOAD_FOLDER = "uploads"
 OUTPUT_FOLDER = "outputs"
 
